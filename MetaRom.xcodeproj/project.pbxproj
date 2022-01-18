@@ -1,0 +1,863 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 51;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		4000EE26212D1C7200AD5B6C /* Date+TimeAgo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4000EE25212D1C7200AD5B6C /* Date+TimeAgo.swift */; };
+		400B2DBC20C1FDC4009DF923 /* AddEditPatientViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 400B2DBB20C1FDC3009DF923 /* AddEditPatientViewController.swift */; };
+		40220A7822D50B1E00C88A06 /* RoutineConfig.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40220A7722D50B1E00C88A06 /* RoutineConfig.swift */; };
+		40220AA322D6B55B00C88A06 /* GaugeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40220A9922D688EB00C88A06 /* GaugeView.swift */; };
+		403258EB20C5F6ED008CE68B /* SkeletonView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 403258EA20C5F6ED008CE68B /* SkeletonView.swift */; };
+		403AF2E321F1195200BF852C /* DeleteOp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 403AF2E221F1195200BF852C /* DeleteOp.swift */; };
+		403AF2E921F15F7700BF852C /* MeasurementDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 403AF2E821F15F7700BF852C /* MeasurementDetailView.swift */; };
+		403AF2EC21F15F8D00BF852C /* MeasurementDetailView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 403AF2EB21F15F8D00BF852C /* MeasurementDetailView.xib */; };
+		403AF2F821F192A300BF852C /* NibLoadable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 403AF2F721F192A300BF852C /* NibLoadable.swift */; };
+		4040F0FB2130B41500B7702C /* StreamProcessor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4040F0FA2130B41500B7702C /* StreamProcessor.swift */; };
+		4041AC3B20C8705A0032327C /* SingleSessionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4041AC3A20C8705A0032327C /* SingleSessionViewController.swift */; };
+		4041AC3D20C899B80032327C /* Session.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4041AC3C20C899B80032327C /* Session.swift */; };
+		4048F27520E1880500AAB954 /* QuaternionStream.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4048F27420E1880500AAB954 /* QuaternionStream.swift */; };
+		4048F27720E1891B00AAB954 /* ThreeJS.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4048F27620E1891B00AAB954 /* ThreeJS.swift */; };
+		4048F27920E18AA100AAB954 /* Conversion.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4048F27820E18AA100AAB954 /* Conversion.swift */; };
+		4048F27B20E18CEE00AAB954 /* ProcessingTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4048F27A20E18CEE00AAB954 /* ProcessingTests.swift */; };
+		4048F27D20E1927900AAB954 /* JointConfig.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4048F27C20E1927900AAB954 /* JointConfig.swift */; };
+		4050587D21C0B34B00B850A4 /* LEDFirmwareGeneration.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4050587C21C0B34B00B850A4 /* LEDFirmwareGeneration.swift */; };
+		40563D012193787200F0DC70 /* SessionSetupViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40563D002193787200F0DC70 /* SessionSetupViewController.swift */; };
+		4057D0BC21EBF42200EBEF48 /* Sensor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4057D0BB21EBF42200EBEF48 /* Sensor.swift */; };
+		4057D0C421F006F400EBEF48 /* PeakFinding.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4057D0C321F006F300EBEF48 /* PeakFinding.swift */; };
+		4057D0CB21F00BA100EBEF48 /* Flexion-Extension.csv in Resources */ = {isa = PBXBuildFile; fileRef = 4057D0CA21F00BA100EBEF48 /* Flexion-Extension.csv */; };
+		405CDE1921B896AD002B0142 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 405CDE1821B896AD002B0142 /* GoogleService-Info.plist */; };
+		406E23F520B77F7D006327D4 /* Patient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 406E23F420B77F7D006327D4 /* Patient.swift */; };
+		406E23F720B78C57006327D4 /* PatientTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 406E23F620B78C57006327D4 /* PatientTableViewCell.swift */; };
+		406E23F920B79413006327D4 /* PatientViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 406E23F820B79413006327D4 /* PatientViewController.swift */; };
+		406E23FB20B79989006327D4 /* ConfigureSessionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 406E23FA20B79989006327D4 /* ConfigureSessionViewController.swift */; };
+		406E23FD20B79D00006327D4 /* SessionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 406E23FC20B79D00006327D4 /* SessionViewController.swift */; };
+		406E23FF20BDE924006327D4 /* Globals.swift in Sources */ = {isa = PBXBuildFile; fileRef = 406E23FE20BDE924006327D4 /* Globals.swift */; };
+		406E240120BDF1E8006327D4 /* DesignableLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 406E240020BDF1E8006327D4 /* DesignableLabel.swift */; };
+		4075D6ED216C2D9F0019E69B /* BirdyConversion.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4075D6EC216C2D9F0019E69B /* BirdyConversion.swift */; };
+		4075D6F0216D332B0019E69B /* PlacementCalibrateViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4075D6EF216D332B0019E69B /* PlacementCalibrateViewController.swift */; };
+		4075D709216E83D00019E69B /* MacroLogger.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4075D6F3216E810B0019E69B /* MacroLogger.swift */; };
+		4075D70A216E83E10019E69B /* FirmwareGeneration.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4075D6F4216E810B0019E69B /* FirmwareGeneration.swift */; };
+		4075D70C216E8F750019E69B /* datasignal_extension.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 4075D6FB216E820A0019E69B /* datasignal_extension.cpp */; };
+		407B643520BF386C00189986 /* SessionHistoryCollectionReusableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 407B643420BF386C00189986 /* SessionHistoryCollectionReusableView.swift */; };
+		409D75F02091670500E7B605 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 409D75EF2091670500E7B605 /* AppDelegate.swift */; };
+		409D75F52091670500E7B605 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 409D75F32091670500E7B605 /* Main.storyboard */; };
+		409D75FA2091670700E7B605 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 409D75F82091670700E7B605 /* LaunchScreen.storyboard */; };
+		409D76052091670700E7B605 /* TheragoniTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 409D76042091670700E7B605 /* TheragoniTests.swift */; };
+		409D763220916CBA00E7B605 /* arm.scnassets in Resources */ = {isa = PBXBuildFile; fileRef = 409D763120916CBA00E7B605 /* arm.scnassets */; };
+		40A9D9F322811AA600DE36D4 /* MeasurementData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40A9D9F222811AA600DE36D4 /* MeasurementData.swift */; };
+		40D5241620B779DD007628B2 /* PatientTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40D5241520B779DD007628B2 /* PatientTableViewController.swift */; };
+		40EBB701215550EB00787A5C /* LightStatusBarNavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40EBB700215550EB00787A5C /* LightStatusBarNavigationController.swift */; };
+		40F72BD721112D07003C2E7F /* ExerciseConfig.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40F72BD621112D07003C2E7F /* ExerciseConfig.swift */; };
+		40F72BD92111F449003C2E7F /* SessionCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40F72BD82111F449003C2E7F /* SessionCollectionViewCell.swift */; };
+		5F432A7D4070A7D40445AE6D /* Pods_MetaRom.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 07F0DC180BD880411C0240A5 /* Pods_MetaRom.framework */; };
+		AB82EEE725C0A48300ECE5F2 /* BlueSensorSessionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB82EEE625C0A48300ECE5F2 /* BlueSensorSessionViewController.swift */; };
+		AB82EEEF25C0C37900ECE5F2 /* GreenSensorSessionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB82EEEE25C0C37900ECE5F2 /* GreenSensorSessionViewController.swift */; };
+		AB86912E25603B6B0035949E /* Colors.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AB86912D25603B6B0035949E /* Colors.xcassets */; };
+		AB86913625605AC10035949E /* AppIcon.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AB86913525605AC10035949E /* AppIcon.xcassets */; };
+		CCC1602DC9C2A5A4811ACC53 /* Pods_MetaRomTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FFA0FEBB819293201FE57F6A /* Pods_MetaRomTests.framework */; };
+		D0DF404D2149BF29005EE04C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D0DF404C2149BF29005EE04C /* Assets.xcassets */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		409D76012091670700E7B605 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 409D75E42091670500E7B605 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 409D75EB2091670500E7B605;
+			remoteInfo = MetaClinic;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		07F0DC180BD880411C0240A5 /* Pods_MetaRom.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MetaRom.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		081F791137FE1DB81944045D /* Pods-TheragoniTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TheragoniTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-TheragoniTests/Pods-TheragoniTests.debug.xcconfig"; sourceTree = "<group>"; };
+		334D4A8AC3B9E1FF429E52A5 /* Pods-MetaRom.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MetaRom.debug.xcconfig"; path = "Pods/Target Support Files/Pods-MetaRom/Pods-MetaRom.debug.xcconfig"; sourceTree = "<group>"; };
+		4000EE25212D1C7200AD5B6C /* Date+TimeAgo.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Date+TimeAgo.swift"; sourceTree = "<group>"; };
+		400B2DBB20C1FDC3009DF923 /* AddEditPatientViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddEditPatientViewController.swift; sourceTree = "<group>"; };
+		40220A7722D50B1E00C88A06 /* RoutineConfig.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoutineConfig.swift; sourceTree = "<group>"; };
+		40220A9922D688EB00C88A06 /* GaugeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GaugeView.swift; sourceTree = "<group>"; };
+		403258EA20C5F6ED008CE68B /* SkeletonView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SkeletonView.swift; sourceTree = "<group>"; };
+		403AF2E221F1195200BF852C /* DeleteOp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeleteOp.swift; sourceTree = "<group>"; };
+		403AF2E821F15F7700BF852C /* MeasurementDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MeasurementDetailView.swift; sourceTree = "<group>"; };
+		403AF2EB21F15F8D00BF852C /* MeasurementDetailView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MeasurementDetailView.xib; sourceTree = "<group>"; };
+		403AF2F721F192A300BF852C /* NibLoadable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NibLoadable.swift; sourceTree = "<group>"; };
+		4040F0FA2130B41500B7702C /* StreamProcessor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StreamProcessor.swift; sourceTree = "<group>"; };
+		4041AC3A20C8705A0032327C /* SingleSessionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SingleSessionViewController.swift; sourceTree = "<group>"; };
+		4041AC3C20C899B80032327C /* Session.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Session.swift; sourceTree = "<group>"; };
+		4048F27420E1880500AAB954 /* QuaternionStream.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = QuaternionStream.swift; sourceTree = "<group>"; };
+		4048F27620E1891B00AAB954 /* ThreeJS.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThreeJS.swift; sourceTree = "<group>"; };
+		4048F27820E18AA100AAB954 /* Conversion.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Conversion.swift; sourceTree = "<group>"; };
+		4048F27A20E18CEE00AAB954 /* ProcessingTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProcessingTests.swift; sourceTree = "<group>"; };
+		4048F27C20E1927900AAB954 /* JointConfig.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JointConfig.swift; sourceTree = "<group>"; };
+		4050587C21C0B34B00B850A4 /* LEDFirmwareGeneration.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LEDFirmwareGeneration.swift; sourceTree = "<group>"; };
+		40563D002193787200F0DC70 /* SessionSetupViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SessionSetupViewController.swift; sourceTree = "<group>"; };
+		4057D0BB21EBF42200EBEF48 /* Sensor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Sensor.swift; sourceTree = "<group>"; };
+		4057D0C321F006F300EBEF48 /* PeakFinding.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PeakFinding.swift; sourceTree = "<group>"; };
+		4057D0CA21F00BA100EBEF48 /* Flexion-Extension.csv */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "Flexion-Extension.csv"; sourceTree = "<group>"; };
+		405CDE1821B896AD002B0142 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		406E23F420B77F7D006327D4 /* Patient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Patient.swift; sourceTree = "<group>"; };
+		406E23F620B78C57006327D4 /* PatientTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PatientTableViewCell.swift; sourceTree = "<group>"; };
+		406E23F820B79413006327D4 /* PatientViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PatientViewController.swift; sourceTree = "<group>"; };
+		406E23FA20B79989006327D4 /* ConfigureSessionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConfigureSessionViewController.swift; sourceTree = "<group>"; };
+		406E23FC20B79D00006327D4 /* SessionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SessionViewController.swift; sourceTree = "<group>"; };
+		406E23FE20BDE924006327D4 /* Globals.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Globals.swift; sourceTree = "<group>"; };
+		406E240020BDF1E8006327D4 /* DesignableLabel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DesignableLabel.swift; sourceTree = "<group>"; };
+		4075D6EC216C2D9F0019E69B /* BirdyConversion.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BirdyConversion.swift; sourceTree = "<group>"; };
+		4075D6EF216D332B0019E69B /* PlacementCalibrateViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlacementCalibrateViewController.swift; sourceTree = "<group>"; };
+		4075D6F3216E810B0019E69B /* MacroLogger.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MacroLogger.swift; sourceTree = "<group>"; };
+		4075D6F4216E810B0019E69B /* FirmwareGeneration.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FirmwareGeneration.swift; sourceTree = "<group>"; };
+		4075D6FB216E820A0019E69B /* datasignal_extension.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = datasignal_extension.cpp; sourceTree = "<group>"; };
+		4075D6FC216E820A0019E69B /* datasignal_extension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = datasignal_extension.h; sourceTree = "<group>"; };
+		4075D704216E83300019E69B /* Theragoni-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Theragoni-Bridging-Header.h"; sourceTree = "<group>"; };
+		407B643420BF386C00189986 /* SessionHistoryCollectionReusableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SessionHistoryCollectionReusableView.swift; sourceTree = "<group>"; };
+		409D75EC2091670500E7B605 /* MetaRom.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MetaRom.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		409D75EF2091670500E7B605 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		409D75F42091670500E7B605 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		409D75F92091670700E7B605 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		409D75FB2091670700E7B605 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		409D76002091670700E7B605 /* MetaRomTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MetaRomTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		409D76042091670700E7B605 /* TheragoniTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TheragoniTests.swift; sourceTree = "<group>"; };
+		409D76062091670700E7B605 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		409D763120916CBA00E7B605 /* arm.scnassets */ = {isa = PBXFileReference; lastKnownFileType = wrapper.scnassets; path = arm.scnassets; sourceTree = "<group>"; };
+		40A9D9F222811AA600DE36D4 /* MeasurementData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MeasurementData.swift; sourceTree = "<group>"; };
+		40D5241520B779DD007628B2 /* PatientTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PatientTableViewController.swift; sourceTree = "<group>"; };
+		40EBB700215550EB00787A5C /* LightStatusBarNavigationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LightStatusBarNavigationController.swift; sourceTree = "<group>"; };
+		40F72BD621112D07003C2E7F /* ExerciseConfig.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExerciseConfig.swift; sourceTree = "<group>"; };
+		40F72BD82111F449003C2E7F /* SessionCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SessionCollectionViewCell.swift; sourceTree = "<group>"; };
+		49752E4530F3CFBE1832394F /* Pods-MetaRomTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MetaRomTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-MetaRomTests/Pods-MetaRomTests.release.xcconfig"; sourceTree = "<group>"; };
+		557B597E7CD0FCF8752B7794 /* Pods-Theragoni.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Theragoni.release.xcconfig"; path = "Pods/Target Support Files/Pods-Theragoni/Pods-Theragoni.release.xcconfig"; sourceTree = "<group>"; };
+		599625C35694F30C54D2F824 /* Pods-MetaRomTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MetaRomTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-MetaRomTests/Pods-MetaRomTests.debug.xcconfig"; sourceTree = "<group>"; };
+		742438D1FDD5356878BCC2A7 /* Pods-TheragoniTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TheragoniTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-TheragoniTests/Pods-TheragoniTests.release.xcconfig"; sourceTree = "<group>"; };
+		90F0AC8E45439B067E47DD3A /* Pods-Theragoni.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Theragoni.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Theragoni/Pods-Theragoni.debug.xcconfig"; sourceTree = "<group>"; };
+		AB82EEE625C0A48300ECE5F2 /* BlueSensorSessionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BlueSensorSessionViewController.swift; sourceTree = "<group>"; };
+		AB82EEEE25C0C37900ECE5F2 /* GreenSensorSessionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GreenSensorSessionViewController.swift; sourceTree = "<group>"; };
+		AB86912D25603B6B0035949E /* Colors.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Colors.xcassets; sourceTree = "<group>"; };
+		AB86913525605AC10035949E /* AppIcon.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = AppIcon.xcassets; sourceTree = "<group>"; };
+		B47E854FC632EB21C38A51D2 /* Pods-MetaRom.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MetaRom.release.xcconfig"; path = "Pods/Target Support Files/Pods-MetaRom/Pods-MetaRom.release.xcconfig"; sourceTree = "<group>"; };
+		D0DF404C2149BF29005EE04C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		FFA0FEBB819293201FE57F6A /* Pods_MetaRomTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MetaRomTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		409D75E92091670500E7B605 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5F432A7D4070A7D40445AE6D /* Pods_MetaRom.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		409D75FD2091670700E7B605 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CCC1602DC9C2A5A4811ACC53 /* Pods_MetaRomTests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		02B2754C4CF040DC4354F155 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				90F0AC8E45439B067E47DD3A /* Pods-Theragoni.debug.xcconfig */,
+				557B597E7CD0FCF8752B7794 /* Pods-Theragoni.release.xcconfig */,
+				081F791137FE1DB81944045D /* Pods-TheragoniTests.debug.xcconfig */,
+				742438D1FDD5356878BCC2A7 /* Pods-TheragoniTests.release.xcconfig */,
+				334D4A8AC3B9E1FF429E52A5 /* Pods-MetaRom.debug.xcconfig */,
+				B47E854FC632EB21C38A51D2 /* Pods-MetaRom.release.xcconfig */,
+				599625C35694F30C54D2F824 /* Pods-MetaRomTests.debug.xcconfig */,
+				49752E4530F3CFBE1832394F /* Pods-MetaRomTests.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		08ACE78BBF28BEB8ADF78EF2 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				07F0DC180BD880411C0240A5 /* Pods_MetaRom.framework */,
+				FFA0FEBB819293201FE57F6A /* Pods_MetaRomTests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		4048F27320E187E900AAB954 /* Processing */ = {
+			isa = PBXGroup;
+			children = (
+				4048F27420E1880500AAB954 /* QuaternionStream.swift */,
+				4048F27620E1891B00AAB954 /* ThreeJS.swift */,
+				4075D6EC216C2D9F0019E69B /* BirdyConversion.swift */,
+				4048F27820E18AA100AAB954 /* Conversion.swift */,
+				4048F27C20E1927900AAB954 /* JointConfig.swift */,
+				40F72BD621112D07003C2E7F /* ExerciseConfig.swift */,
+				40220A7722D50B1E00C88A06 /* RoutineConfig.swift */,
+				4040F0FA2130B41500B7702C /* StreamProcessor.swift */,
+				40A9D9F222811AA600DE36D4 /* MeasurementData.swift */,
+			);
+			name = Processing;
+			sourceTree = "<group>";
+		};
+		4057D0C821F00B6F00EBEF48 /* data_sets */ = {
+			isa = PBXGroup;
+			children = (
+				4057D0C921F00BA100EBEF48 /* 123_Left-Knee_2019-01-16T16.56.19 */,
+			);
+			path = data_sets;
+			sourceTree = "<group>";
+		};
+		4057D0C921F00BA100EBEF48 /* 123_Left-Knee_2019-01-16T16.56.19 */ = {
+			isa = PBXGroup;
+			children = (
+				4057D0CA21F00BA100EBEF48 /* Flexion-Extension.csv */,
+			);
+			path = "123_Left-Knee_2019-01-16T16.56.19";
+			sourceTree = "<group>";
+		};
+		406E23F320B77F6A006327D4 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				406E23FE20BDE924006327D4 /* Globals.swift */,
+				406E23F420B77F7D006327D4 /* Patient.swift */,
+				4041AC3C20C899B80032327C /* Session.swift */,
+				4057D0BB21EBF42200EBEF48 /* Sensor.swift */,
+				4057D0C321F006F300EBEF48 /* PeakFinding.swift */,
+				403AF2E221F1195200BF852C /* DeleteOp.swift */,
+			);
+			name = Model;
+			sourceTree = "<group>";
+		};
+		4075D6F2216E80EB0019E69B /* FirmwareGeneration */ = {
+			isa = PBXGroup;
+			children = (
+				4050587C21C0B34B00B850A4 /* LEDFirmwareGeneration.swift */,
+				4075D6F4216E810B0019E69B /* FirmwareGeneration.swift */,
+				4075D6F3216E810B0019E69B /* MacroLogger.swift */,
+				4075D6FB216E820A0019E69B /* datasignal_extension.cpp */,
+				4075D6FC216E820A0019E69B /* datasignal_extension.h */,
+				4075D704216E83300019E69B /* Theragoni-Bridging-Header.h */,
+			);
+			path = FirmwareGeneration;
+			sourceTree = "<group>";
+		};
+		409D75E32091670500E7B605 = {
+			isa = PBXGroup;
+			children = (
+				4075D6F2216E80EB0019E69B /* FirmwareGeneration */,
+				409D75EE2091670500E7B605 /* MetaRom */,
+				409D76032091670700E7B605 /* MetaRomTests */,
+				409D75ED2091670500E7B605 /* Products */,
+				02B2754C4CF040DC4354F155 /* Pods */,
+				08ACE78BBF28BEB8ADF78EF2 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		409D75ED2091670500E7B605 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				409D75EC2091670500E7B605 /* MetaRom.app */,
+				409D76002091670700E7B605 /* MetaRomTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		409D75EE2091670500E7B605 /* MetaRom */ = {
+			isa = PBXGroup;
+			children = (
+				4048F27320E187E900AAB954 /* Processing */,
+				406E23F320B77F6A006327D4 /* Model */,
+				40D523CD20B73C1F007628B2 /* View */,
+				40D523CB20B73BF8007628B2 /* Controller */,
+				409D75EF2091670500E7B605 /* AppDelegate.swift */,
+				4000EE25212D1C7200AD5B6C /* Date+TimeAgo.swift */,
+				409D75F32091670500E7B605 /* Main.storyboard */,
+				409D75F82091670700E7B605 /* LaunchScreen.storyboard */,
+				409D75FB2091670700E7B605 /* Info.plist */,
+				405CDE1821B896AD002B0142 /* GoogleService-Info.plist */,
+				D0DF404C2149BF29005EE04C /* Assets.xcassets */,
+				AB86912D25603B6B0035949E /* Colors.xcassets */,
+				AB86913525605AC10035949E /* AppIcon.xcassets */,
+			);
+			path = MetaRom;
+			sourceTree = "<group>";
+		};
+		409D76032091670700E7B605 /* MetaRomTests */ = {
+			isa = PBXGroup;
+			children = (
+				4057D0C821F00B6F00EBEF48 /* data_sets */,
+				409D76042091670700E7B605 /* TheragoniTests.swift */,
+				4048F27A20E18CEE00AAB954 /* ProcessingTests.swift */,
+				409D76062091670700E7B605 /* Info.plist */,
+			);
+			path = MetaRomTests;
+			sourceTree = "<group>";
+		};
+		40D523CB20B73BF8007628B2 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				40D5241520B779DD007628B2 /* PatientTableViewController.swift */,
+				406E23F820B79413006327D4 /* PatientViewController.swift */,
+				40563D002193787200F0DC70 /* SessionSetupViewController.swift */,
+				AB82EEE625C0A48300ECE5F2 /* BlueSensorSessionViewController.swift */,
+				AB82EEEE25C0C37900ECE5F2 /* GreenSensorSessionViewController.swift */,
+				406E23FA20B79989006327D4 /* ConfigureSessionViewController.swift */,
+				4075D6EF216D332B0019E69B /* PlacementCalibrateViewController.swift */,
+				406E23FC20B79D00006327D4 /* SessionViewController.swift */,
+				400B2DBB20C1FDC3009DF923 /* AddEditPatientViewController.swift */,
+				4041AC3A20C8705A0032327C /* SingleSessionViewController.swift */,
+				40EBB700215550EB00787A5C /* LightStatusBarNavigationController.swift */,
+			);
+			name = Controller;
+			sourceTree = "<group>";
+		};
+		40D523CD20B73C1F007628B2 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				409D763120916CBA00E7B605 /* arm.scnassets */,
+				406E23F620B78C57006327D4 /* PatientTableViewCell.swift */,
+				407B643420BF386C00189986 /* SessionHistoryCollectionReusableView.swift */,
+				40F72BD82111F449003C2E7F /* SessionCollectionViewCell.swift */,
+				403258EA20C5F6ED008CE68B /* SkeletonView.swift */,
+				403AF2E821F15F7700BF852C /* MeasurementDetailView.swift */,
+				403AF2EB21F15F8D00BF852C /* MeasurementDetailView.xib */,
+				403AF2F721F192A300BF852C /* NibLoadable.swift */,
+				406E240020BDF1E8006327D4 /* DesignableLabel.swift */,
+				40220A9922D688EB00C88A06 /* GaugeView.swift */,
+			);
+			name = View;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		409D75EB2091670500E7B605 /* MetaRom */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 409D76092091670700E7B605 /* Build configuration list for PBXNativeTarget "MetaRom" */;
+			buildPhases = (
+				1EBEE13C2BE920F4D9B4982C /* [CP] Check Pods Manifest.lock */,
+				409D75E82091670500E7B605 /* Sources */,
+				409D75E92091670500E7B605 /* Frameworks */,
+				409D75EA2091670500E7B605 /* Resources */,
+				DB7FC191A571B65432E2202C /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = MetaRom;
+			productName = MetaClinic;
+			productReference = 409D75EC2091670500E7B605 /* MetaRom.app */;
+			productType = "com.apple.product-type.application";
+		};
+		409D75FF2091670700E7B605 /* MetaRomTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 409D760C2091670700E7B605 /* Build configuration list for PBXNativeTarget "MetaRomTests" */;
+			buildPhases = (
+				9CBDB8649DE9B1E22E299F4A /* [CP] Check Pods Manifest.lock */,
+				409D75FC2091670700E7B605 /* Sources */,
+				409D75FD2091670700E7B605 /* Frameworks */,
+				409D75FE2091670700E7B605 /* Resources */,
+				2680925D1795E28B5F72ACB7 /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				409D76022091670700E7B605 /* PBXTargetDependency */,
+			);
+			name = MetaRomTests;
+			productName = MetaClinicTests;
+			productReference = 409D76002091670700E7B605 /* MetaRomTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		409D75E42091670500E7B605 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				DefaultBuildSystemTypeForWorkspace = Original;
+				LastSwiftUpdateCheck = 1020;
+				LastUpgradeCheck = 1220;
+				ORGANIZATIONNAME = "MBIENTLAB, INC";
+				TargetAttributes = {
+					409D75EB2091670500E7B605 = {
+						CreatedOnToolsVersion = 9.3;
+						LastSwiftMigration = 1010;
+						SystemCapabilities = {
+							com.apple.BackgroundModes = {
+								enabled = 1;
+							};
+							com.apple.iCloud = {
+								enabled = 1;
+							};
+						};
+					};
+					409D75FF2091670700E7B605 = {
+						CreatedOnToolsVersion = 9.3;
+						LastSwiftMigration = 1010;
+						TestTargetID = 409D75EB2091670500E7B605;
+					};
+				};
+			};
+			buildConfigurationList = 409D75E72091670500E7B605 /* Build configuration list for PBXProject "MetaRom" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 409D75E32091670500E7B605;
+			productRefGroup = 409D75ED2091670500E7B605 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				409D75EB2091670500E7B605 /* MetaRom */,
+				409D75FF2091670700E7B605 /* MetaRomTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		409D75EA2091670500E7B605 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				409D763220916CBA00E7B605 /* arm.scnassets in Resources */,
+				D0DF404D2149BF29005EE04C /* Assets.xcassets in Resources */,
+				403AF2EC21F15F8D00BF852C /* MeasurementDetailView.xib in Resources */,
+				409D75FA2091670700E7B605 /* LaunchScreen.storyboard in Resources */,
+				AB86912E25603B6B0035949E /* Colors.xcassets in Resources */,
+				409D75F52091670500E7B605 /* Main.storyboard in Resources */,
+				AB86913625605AC10035949E /* AppIcon.xcassets in Resources */,
+				405CDE1921B896AD002B0142 /* GoogleService-Info.plist in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		409D75FE2091670700E7B605 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4057D0CB21F00BA100EBEF48 /* Flexion-Extension.csv in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		1EBEE13C2BE920F4D9B4982C /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-MetaRom-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		2680925D1795E28B5F72ACB7 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-MetaRomTests/Pods-MetaRomTests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-MetaRomTests/Pods-MetaRomTests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-MetaRomTests/Pods-MetaRomTests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		9CBDB8649DE9B1E22E299F4A /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-MetaRomTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		DB7FC191A571B65432E2202C /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-MetaRom/Pods-MetaRom-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-MetaRom/Pods-MetaRom-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-MetaRom/Pods-MetaRom-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		409D75E82091670500E7B605 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				40A9D9F322811AA600DE36D4 /* MeasurementData.swift in Sources */,
+				406E23FB20B79989006327D4 /* ConfigureSessionViewController.swift in Sources */,
+				40F72BD92111F449003C2E7F /* SessionCollectionViewCell.swift in Sources */,
+				AB82EEEF25C0C37900ECE5F2 /* GreenSensorSessionViewController.swift in Sources */,
+				403258EB20C5F6ED008CE68B /* SkeletonView.swift in Sources */,
+				40D5241620B779DD007628B2 /* PatientTableViewController.swift in Sources */,
+				40220A7822D50B1E00C88A06 /* RoutineConfig.swift in Sources */,
+				4075D6F0216D332B0019E69B /* PlacementCalibrateViewController.swift in Sources */,
+				40EBB701215550EB00787A5C /* LightStatusBarNavigationController.swift in Sources */,
+				4048F27D20E1927900AAB954 /* JointConfig.swift in Sources */,
+				403AF2E921F15F7700BF852C /* MeasurementDetailView.swift in Sources */,
+				40F72BD721112D07003C2E7F /* ExerciseConfig.swift in Sources */,
+				4048F27920E18AA100AAB954 /* Conversion.swift in Sources */,
+				400B2DBC20C1FDC4009DF923 /* AddEditPatientViewController.swift in Sources */,
+				4057D0BC21EBF42200EBEF48 /* Sensor.swift in Sources */,
+				4041AC3B20C8705A0032327C /* SingleSessionViewController.swift in Sources */,
+				4075D70C216E8F750019E69B /* datasignal_extension.cpp in Sources */,
+				4048F27720E1891B00AAB954 /* ThreeJS.swift in Sources */,
+				4000EE26212D1C7200AD5B6C /* Date+TimeAgo.swift in Sources */,
+				406E23F920B79413006327D4 /* PatientViewController.swift in Sources */,
+				4040F0FB2130B41500B7702C /* StreamProcessor.swift in Sources */,
+				406E23FD20B79D00006327D4 /* SessionViewController.swift in Sources */,
+				4057D0C421F006F400EBEF48 /* PeakFinding.swift in Sources */,
+				403AF2F821F192A300BF852C /* NibLoadable.swift in Sources */,
+				406E23FF20BDE924006327D4 /* Globals.swift in Sources */,
+				406E23F520B77F7D006327D4 /* Patient.swift in Sources */,
+				4075D6ED216C2D9F0019E69B /* BirdyConversion.swift in Sources */,
+				AB82EEE725C0A48300ECE5F2 /* BlueSensorSessionViewController.swift in Sources */,
+				4048F27520E1880500AAB954 /* QuaternionStream.swift in Sources */,
+				406E23F720B78C57006327D4 /* PatientTableViewCell.swift in Sources */,
+				4041AC3D20C899B80032327C /* Session.swift in Sources */,
+				403AF2E321F1195200BF852C /* DeleteOp.swift in Sources */,
+				407B643520BF386C00189986 /* SessionHistoryCollectionReusableView.swift in Sources */,
+				40220AA322D6B55B00C88A06 /* GaugeView.swift in Sources */,
+				409D75F02091670500E7B605 /* AppDelegate.swift in Sources */,
+				40563D012193787200F0DC70 /* SessionSetupViewController.swift in Sources */,
+				406E240120BDF1E8006327D4 /* DesignableLabel.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		409D75FC2091670700E7B605 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4050587D21C0B34B00B850A4 /* LEDFirmwareGeneration.swift in Sources */,
+				4075D70A216E83E10019E69B /* FirmwareGeneration.swift in Sources */,
+				4048F27B20E18CEE00AAB954 /* ProcessingTests.swift in Sources */,
+				409D76052091670700E7B605 /* TheragoniTests.swift in Sources */,
+				4075D709216E83D00019E69B /* MacroLogger.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		409D76022091670700E7B605 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 409D75EB2091670500E7B605 /* MetaRom */;
+			targetProxy = 409D76012091670700E7B605 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		409D75F32091670500E7B605 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				409D75F42091670500E7B605 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		409D75F82091670700E7B605 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				409D75F92091670700E7B605 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		409D76072091670700E7B605 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CODE_SIGN_INJECT_BASE_ENTITLEMENTS = NO;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_BITCODE = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				HEADER_SEARCH_PATHS = "$(PODS_ROOT)/MetaWear/MetaWear/MetaWear-SDK-Cpp/src";
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		409D76082091670700E7B605 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CODE_SIGN_INJECT_BASE_ENTITLEMENTS = NO;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_BITCODE = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				HEADER_SEARCH_PATHS = "$(PODS_ROOT)/MetaWear/MetaWear/MetaWear-SDK-Cpp/src";
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				SWIFT_VERSION = 5.0;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		409D760A2091670700E7B605 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 334D4A8AC3B9E1FF429E52A5 /* Pods-MetaRom.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = "";
+				CODE_SIGN_IDENTITY = "Apple Development";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = S2273LZ6GL;
+				INFOPLIST_FILE = "$(SRCROOT)/MetaRom/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0.1;
+				PRODUCT_BUNDLE_IDENTIFIER = com.mbientlab.metarom;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SWIFT_OBJC_BRIDGING_HEADER = "FirmwareGeneration/Theragoni-Bridging-Header.h";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		409D760B2091670700E7B605 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = B47E854FC632EB21C38A51D2 /* Pods-MetaRom.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = "";
+				CODE_SIGN_IDENTITY = "Apple Development";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = S2273LZ6GL;
+				INFOPLIST_FILE = "$(SRCROOT)/MetaRom/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0.1;
+				PRODUCT_BUNDLE_IDENTIFIER = com.mbientlab.metarom;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SWIFT_OBJC_BRIDGING_HEADER = "FirmwareGeneration/Theragoni-Bridging-Header.h";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		409D760D2091670700E7B605 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 599625C35694F30C54D2F824 /* Pods-MetaRomTests.debug.xcconfig */;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = S2273LZ6GL;
+				INFOPLIST_FILE = MetaClinicTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.mbientlab.MetaClinicTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "FrimwareGeneration/MetaClinic-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/MetaRom.app/MetaRom";
+			};
+			name = Debug;
+		};
+		409D760E2091670700E7B605 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 49752E4530F3CFBE1832394F /* Pods-MetaRomTests.release.xcconfig */;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = S2273LZ6GL;
+				INFOPLIST_FILE = MetaClinicTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.mbientlab.MetaClinicTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "FrimwareGeneration/MetaClinic-Bridging-Header.h";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/MetaRom.app/MetaRom";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		409D75E72091670500E7B605 /* Build configuration list for PBXProject "MetaRom" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				409D76072091670700E7B605 /* Debug */,
+				409D76082091670700E7B605 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		409D76092091670700E7B605 /* Build configuration list for PBXNativeTarget "MetaRom" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				409D760A2091670700E7B605 /* Debug */,
+				409D760B2091670700E7B605 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		409D760C2091670700E7B605 /* Build configuration list for PBXNativeTarget "MetaRomTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				409D760D2091670700E7B605 /* Debug */,
+				409D760E2091670700E7B605 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 409D75E42091670500E7B605 /* Project object */;
+}
